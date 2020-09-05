@@ -1,0 +1,27 @@
+[
+  {
+    "name": "default",
+    "type": "mariadb",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "rootr00t",
+    "database": "classicmodels",
+    "schema": "",
+    "synchronize": true,
+    "entities": [
+        "src/entities/**/*.ts"
+    ],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entities",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    }
+  }
+]
